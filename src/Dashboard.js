@@ -18,6 +18,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems } from './listItems';
+import Logout from './Logout';
 
 
 function Copyright(props) {
@@ -185,7 +186,7 @@ export default function Dashboard() {
                     height: 240,
                   }}
                 >
-                 
+                 <Logout/>
                 </Paper>
               </Grid>
               {/* Recent Orders */}

@@ -8,9 +8,14 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PeopleIcon from '@mui/icons-material/People';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
-import AssignmentIcon from '@mui/icons-material/Assignment';
+import {LoginOutlined} from '@mui/icons-material';
+import {useNavigate} from 'react-router-dom'
+
+
+
 
 export const mainListItems = (
+  
   <React.Fragment>
     <ListItemButton>
       <ListItemIcon>
@@ -41,6 +46,13 @@ export const mainListItems = (
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Charts" />
+    </ListItemButton>
+    <ListItemButton onClick={Abc}>
+      <ListItemIcon>
+        <LoginOutlined/>
+      </ListItemIcon>
+        <ListItemText primary="Logout"/>
+      
     </ListItemButton>
   </React.Fragment>
 );
